@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function ctf(cel) {
+        return (cel * 9 / 5) + 32;
+      }
+
+      function ftc(fah) {
+        return (fah - 32) * 5 / 9;
+      }
+
+      function cvtTmp(deg, unt) {
+        if (unt === 'C') {
+          const res = ctf(deg);
+          return `${res}F`;
+        } else if (unt === 'F') {
+          const res = ftc(deg);
+          return `${res}C`;
+        }
+      }
+
+      console.log(cvtTmp(25, 'C'));
+      console.log(cvtTmp(86, 'F'));
+    </script>
+  </body>
+</html>
