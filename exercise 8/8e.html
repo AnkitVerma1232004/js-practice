@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function compareProduct(x,y){
+            if(x.price==y.price && x.name==y.name){
+                console.log("these are same product");    
+            }
+            else {
+                console.log("these are different product");
+            }
+        }
+        let product={name:"shirt",price:1000}
+        let produc1={name:"shirt",price:1000}
+        let produc2={name:"shirt",price:1050}
+        compareProduct(product,produc1);
+        compareProduct(product,produc2);
+        
+    </script>
+</body>
+</html>
