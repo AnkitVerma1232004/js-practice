@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <input placeholder="Name" class="input">
+
+    <button onclick="
+      document.querySelector('.msg')
+        .innerHTML = `Your name is: ${document.querySelector('.input').value}`;
+    ">Submit</button>
+
+    <p class="msg"></p>
+  </body>
+</html>
